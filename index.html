@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta nae="viewport" content="widh=devide-width",
+        initial-scale="1.0">
+
+        <title> Challenge - Encriptador</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-encriptador.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <header>
+
+            <div class="caja-logo">
+                
+                <h1><img src="logo.png" alt="logo alura"></h1>
+                
+            </div>
+
+        </header>
+
+    </head>
+
+    <body>
+
+        <main>
+            <section class="section1">
+                 
+                <textarea cols="40" rows="10" class="texto-1" placeholder="Ingrese el texto aquí" onkeypress="return ((event.charCode >= 32 && event.charCode <= 64) || (event.charCode >= 97 && event.charCode <= 126))"></textarea>
+                
+                <div class="contendor-botones-principales">
+                    <p class="rules"> <img class="vector" src="Vector.png" alt="exclamacion">solo minusculas y sin acentos </p>
+                    <input type="button" class="btnEncriptar" value="encriptar" onclick="encriptar()">
+                    <input type="button" class="btnDesencriptar" value="desencriptar" onclick="desencriptar()">  
+                </div>
+            </section>
+            <section class="section2">
+
+                <div class="contenedor-munheco">
+                <h2>><img src="munheco.png" alt="munheco" class="munheco"></h2>
+                </div>
+                <div class="contenedor-textos">
+                <h3 class="no-mensaje">Ningún mensaje fue encontrado</h3>
+                <p class="ingresa-texto">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                
+                <div class="contenedor-resultado">
+                <textarea class="texto-resultado" cols="5" rows="10"></textarea>
+                </div>
+                <div class="boton-copiar">
+                    <input type="button" class="btnCopiar" value="copiar">
+                    <input type="button" class="btnBorrar" value="borrar" onclick="borrar()">
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="pie-pagina1">
+            <ul>
+            <il>Paula Gutiérrez <a href="https://www.linkedin.com/in/pau-guti%C3%A9rrez-mantilla/"><img src="linkedin.png" alt="linkedin" class="icono"><a href="https://github.com/pauwtf?tab=repositories"><img src="giyhub.png" alt="github" class="icono"></a></il>
+            <il>//</il>
+            <il>Alura Challange</il>
+            </ul>
+            </div>
+            <div class="pie-pagina2">
+            <p>©Copyright</p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="script3.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        
+    </body>
+
+</html>
